@@ -1,18 +1,20 @@
-struct Array { // структура массива
-	float* items; // элементы
-	int number; // кол-во элементов
+#include <iostream>
+
+struct Array { // Г±ГІГ°ГіГЄГІГіГ°Г  Г¬Г Г±Г±ГЁГўГ 
+	float* items; // ГЅГ«ГҐГ¬ГҐГ­ГІГ»
+	int number; // ГЄГ®Г«-ГўГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў
 };
 
-// задание сортировки
+// Г§Г Г¤Г Г­ГЁГҐ Г±Г®Г°ГІГЁГ°Г®ГўГЄГЁ
 void Sorting();
 
-// сформировать массив (parent)
+// Г±ГґГ®Г°Г¬ГЁГ°Г®ГўГ ГІГј Г¬Г Г±Г±ГЁГў (parent)
 void FormArray(Array);
-// ввести массив с клавиатуры (child 1)
+// ГўГўГҐГ±ГІГЁ Г¬Г Г±Г±ГЁГў Г± ГЄГ«Г ГўГЁГ ГІГіГ°Г» (child 1)
 void EnterArrayByKeyboard(Array);
-// зарандомить массив (child 2)
+// Г§Г Г°Г Г­Г¤Г®Г¬ГЁГІГј Г¬Г Г±Г±ГЁГў (child 2)
 void RandomArray(Array);
-// считать массив из файла (child 3)
+// Г±Г·ГЁГІГ ГІГј Г¬Г Г±Г±ГЁГў ГЁГ§ ГґГ Г©Г«Г  (child 3)
 void GetArrayFromFile(Array);
-// флотовый рандом
+// ГґГ«Г®ГІГ®ГўГ»Г© Г°Г Г­Г¤Г®Г¬
 float FloatRandom(float, float);

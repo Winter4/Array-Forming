@@ -43,23 +43,23 @@ void GetArrayFromFile(Array array)
 	FILE* file;
 	char fileName[12];
 	do {
-		printf("Enter the file name: "); // ввод имени файла
+		printf("Enter the file name: "); 
 		gets_s(fileName);
 
 		file = fopen(fileName, "r");
 	} while (file == NULL);
 
 	int i = 0;
-	while (i < array.number && !(feof(file))) { // считывание из файла
+	while (i < array.number && !(feof(file))) { 
 		fscanf(file, "%f", &array.items[i]);
 		i++;
 	}
 	fclose(file);
 
-	for (i; i < array.number; i++) // дозаполнение рандомом
+	for (i; i < array.number; i++) // РґРѕР·Р°РїРѕР»РЅРµРЅРёРµ СЂР°РЅРґРѕРјРѕРј
 		array.items[i] = FloatRandom(-2 * array.number, 2 * array.number);
 	
-	printf("\nThe array: \n"); // вывод в консоль
+	printf("\nThe array: \n"); // РІС‹РІРѕРґ
 	for (int i = 0; i < array.number; i++)
 		printf("Item %d: %.1f \n", i + 1, array.items[i]);
 }

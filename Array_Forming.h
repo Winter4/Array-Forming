@@ -1,20 +1,20 @@
-#include <iostream>
+﻿#include <iostream>
 
-struct Array { // ñòðóêòóðà ìàññèâà
-	float* items; // ýëåìåíòû
-	int number; // êîë-âî ýëåìåíòîâ
+struct Array { // структура массива
+	float* items; // элементы
+	int number; // кол-во элементов
 };
 
-// çàäàíèå ñîðòèðîâêè
+// задание сортировки
 void Sorting();
 
-// ñôîðìèðîâàòü ìàññèâ (parent)
+// сформировать массив (parent)
 void FormArray(Array);
-// ââåñòè ìàññèâ ñ êëàâèàòóðû (child 1)
+// ввести массив с клавиатуры (child 1)
 void EnterArrayByKeyboard(Array);
-// çàðàíäîìèòü ìàññèâ (child 2)
+// зарандомить массив (child 2)
 void RandomArray(Array);
-// ñ÷èòàòü ìàññèâ èç ôàéëà (child 3)
+// считать массив из файла (child 3)
 void GetArrayFromFile(Array);
-// ôëîòîâûé ðàíäîì
+// флотовый рандом
 float FloatRandom(float, float);

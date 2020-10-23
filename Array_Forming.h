@@ -5,9 +5,6 @@ struct Array { // структура массива
 	int number; // кол-во элементов
 };
 
-// задание сортировки
-void Sorting();
-
 // сформировать массив (parent)
 void FormArray(Array);
 // ввести массив с клавиатуры (child 1)
